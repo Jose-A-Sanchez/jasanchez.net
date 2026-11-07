@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surge | Andy Sanchez</title>
+  <meta name="description" content="A self-hosted Flask app that builds a morning alarm playlist from chant, text-to-speech, and the day's readings.">
+  <meta property="og:title" content="Surge | Andy Sanchez">
+  <meta property="og:description" content="A self-hosted Flask app that builds a morning alarm playlist from chant, text-to-speech, and the day's readings.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jasanchez.net/projects/surge.html">
+  <link rel="canonical" href="https://jasanchez.net/projects/surge.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,600;112,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="../index.html" aria-label="Andy Sanchez, home">
+        <span class="brand-mark" aria-hidden="true">AS</span>
+        <span>Andy Sanchez</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <nav id="nav-links" class="nav-links" aria-label="Main">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#credentials">Credentials</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a class="btn btn-small" href="../index.html#contact">Let's talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="case-hero">
+      <div class="wrap">
+        <a class="back" href="../index.html#projects">Back to all projects</a>
+        <p class="tag">[ Case study ]</p>
+        <h1>Surge</h1>
+        <p class="lede">A self-hosted morning alarm app that builds a new audio playlist every day from Gregorian chant, a spoken quote, and the day's Mass readings.</p>
+        <dl class="facts">
+          <div><dt>Role</dt><dd>Solo project</dd></div>
+          <div><dt>Runs on</dt><dd>Mac Mini M1, at home</dd></div>
+          <div><dt>Stack</dt><dd>Python, Flask, launchd</dd></div>
+          <div><dt>Status</dt><dd>Playlist engine in progress</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="case">
+      <div class="wrap case-body">
+        <h2>The idea</h2>
+        <div class="content">
+          <p>I wanted to wake up to something better than a phone alarm: chant, a short saint or scripture quote, and the day's readings, put together fresh each morning.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case">
+      <div class="wrap case-body">
+        <h2>How it works</h2>
+        <div class="content">
+          <ul>
+            <li><strong>Flask backend</strong> running as a background service on a Mac Mini through launchd, so it starts on boot and restarts if it crashes</li>
+            <li><strong>Playlist engine</strong> that strings together chant, then a quote read aloud with ElevenLabs text-to-speech, then more chant</li>
+            <li><strong>Daily readings</strong> pulled from the USCCB's RSS feed</li>
+            <li><strong>Secrets kept out of the code</strong> in an environment file loaded with python-dotenv</li>
+            <li><strong>A custom interface</strong> in blue and gold with classical typefaces to match the purpose</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case">
+      <div class="wrap case-body">
+        <h2>What it shows</h2>
+        <div class="content">
+          <p>This is the same pattern I'd use for any small internal tool: a service that runs unattended, pulls from outside APIs, keeps credentials out of the code, and recovers on its own.</p>
+          <!-- TODO (Andy): replace or add to this section in your own words. Recruiters can tell. -->
+        </div>
+      </div>
+    </section>
+
+    <section class="next-project">
+      <div class="wrap">
+        <a href="homelab.html"><span>Next project</span><strong>Homelab infrastructure</strong></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>Andy Sanchez, IT Technician in Kansas.</p>
+      <nav aria-label="Footer">
+        <a href="../resume.pdf">Resume</a>
+        <a href="https://github.com/Jose-A-Sanchez">GitHub</a>
+        <a href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+      </nav>
+      <p class="muted">&copy; <span id="year">2026</span> Andy Sanchez</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

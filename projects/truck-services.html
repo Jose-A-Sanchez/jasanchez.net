@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sanchez Truck Services | Andy Sanchez</title>
+  <meta name="description" content="An online scheduling site with customer accounts and an owner panel for a semi-truck greasing business.">
+  <meta property="og:title" content="Sanchez Truck Services | Andy Sanchez">
+  <meta property="og:description" content="An online scheduling site with customer accounts and an owner panel for a semi-truck greasing business.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jasanchez.net/projects/truck-services.html">
+  <link rel="canonical" href="https://jasanchez.net/projects/truck-services.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,600;112,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="../index.html" aria-label="Andy Sanchez, home">
+        <span class="brand-mark" aria-hidden="true">AS</span>
+        <span>Andy Sanchez</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <nav id="nav-links" class="nav-links" aria-label="Main">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#credentials">Credentials</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a class="btn btn-small" href="../index.html#contact">Let's talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="case-hero">
+      <div class="wrap">
+        <a class="back" href="../index.html#projects">Back to all projects</a>
+        <p class="tag">[ Case study ]</p>
+        <h1>Sanchez Truck Services</h1>
+        <p class="lede">Online scheduling for a family member's semi-truck greasing business, replacing phone calls and texts with bookings the owner can manage himself.</p>
+        <dl class="facts">
+          <div><dt>Role</dt><dd>Design, build, maintain</dd></div>
+          <div><dt>Client</dt><dd>Family business</dd></div>
+          <div><dt>Stack</dt><dd>Firebase Auth, Firestore, GitHub Pages</dd></div>
+          <div><dt>Code</dt><dd><a href="https://github.com/Jose-A-Sanchez/sanchez-truckservices">GitHub repo</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="case">
+      <div class="wrap case-body">
+        <h2>The problem</h2>
+        <div class="content">
+          <p>Every appointment was booked by phone or text, which meant interruptions during jobs and a calendar that only lived in the owner's head.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case">
+      <div class="wrap case-body">
+        <h2>What I built</h2>
+        <div class="content">
+          <ul>
+            <li><strong>Customer accounts</strong> with email and password sign-in and email verification, through Firebase Authentication</li>
+            <li><strong>Booking</strong> stored in Firestore, so appointments are saved and checked against what's already taken</li>
+            <li><strong>Blocked dates</strong> the owner can set for days he isn't working</li>
+            <li><strong>An owner panel</strong> to see and manage upcoming appointments</li>
+            <li><strong>Free hosting</strong> on GitHub Pages</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case">
+      <div class="wrap case-body">
+        <h2>Why this stack</h2>
+        <div class="content">
+          <p>Firebase handles sign-in and data storage without a server for me to run or patch, and its free tier covers a small business easily. That kept the cost at zero and the maintenance low, which matters when I'm the one supporting it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case">
+      <div class="wrap case-body">
+        <h2>What I learned</h2>
+        <div class="content">
+          <!-- TODO (Andy): replace or add to this section in your own words. Recruiters can tell. -->
+          <p>Building sign-in and data access for a real customer means thinking about who can read and change each record, not just whether the page works.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="next-project">
+      <div class="wrap">
+        <a href="surge.html"><span>Next project</span><strong>Surge</strong></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>Andy Sanchez, IT Technician in Kansas.</p>
+      <nav aria-label="Footer">
+        <a href="../resume.pdf">Resume</a>
+        <a href="https://github.com/Jose-A-Sanchez">GitHub</a>
+        <a href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+      </nav>
+      <p class="muted">&copy; <span id="year">2026</span> Andy Sanchez</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

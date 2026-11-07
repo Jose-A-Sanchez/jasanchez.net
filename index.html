@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andy Sanchez | IT Technician & Infrastructure</title>
+  <meta name="description" content="Andy Sanchez is an IT Technician at a managed service provider who builds networks, servers, and web apps on his own time.">
+  <meta property="og:title" content="Andy Sanchez | IT Technician & Infrastructure">
+  <meta property="og:description" content="Networks, virtualization, Microsoft 365 and web projects. Open to new opportunities.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jasanchez.net/">
+  <link rel="canonical" href="https://jasanchez.net/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,600;112,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Andy Sanchez, home">
+        <span class="brand-mark" aria-hidden="true">AS</span>
+        <span>Andy Sanchez</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <nav id="nav-links" class="nav-links" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#contact">Let's talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="status"><span class="dot" aria-hidden="true"></span>Open to new opportunities</p>
+          <h1>I keep small businesses online, and build the infrastructure behind them.</h1>
+          <p class="lede">I'm Andy, an IT Technician at a managed service provider supporting 23 client businesses. Off the clock I run a Proxmox homelab and build web apps for family businesses.</p>
+          <div class="actions">
+            <a class="btn" href="#projects">See my projects</a>
+            <a class="btn btn-ghost" href="resume.pdf">Download resume</a>
+          </div>
+        </div>
+
+        <aside class="panel" aria-label="What I run at home">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <div class="panel-head">
+            <span>homelab</span>
+            <span class="mono muted">all services up</span>
+          </div>
+          <ul class="services">
+            <li><span class="svc">Proxmox VE</span><span class="mono muted">hypervisor</span><span class="up">up</span></li>
+            <li><span class="svc">Frigate NVR</span><span class="mono muted">LXC, QuickSync</span><span class="up">up</span></li>
+            <li><span class="svc">UniFi Network</span><span class="mono muted">3 VLANs</span><span class="up">up</span></li>
+            <li><span class="svc">AdGuard Home</span><span class="mono muted">DNS filtering</span><span class="up">up</span></li>
+            <li><span class="svc">UniFi Protect</span><span class="mono muted">2 cameras</span><span class="up">up</span></li>
+            <li><span class="svc">Homepage</span><span class="mono muted">dashboard</span><span class="up">up</span></li>
+          </ul>
+          <p class="panel-foot mono muted">Main / IoT / Guest networks, segmented</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap two-col">
+        <div>
+          <p class="tag">[ About ]</p>
+          <h2>Two years on the help desk taught me that reliable beats clever.</h2>
+        </div>
+        <div class="prose">
+          <p>At Revive IT I'm one of five people supporting 23 businesses under managed service agreements. That means user tickets in the morning, a network issue after lunch, and a Microsoft 365 migration by the end of the week.</p>
+          <p>I earned my AAS from Kansas City Kansas Community College in 2025 and I'm working toward CompTIA A+. Most of what I know about networking, though, came from breaking and rebuilding my own lab.</p>
+          <p>When family needed a website or a scheduling system, I built it, hosted it, and still maintain it. I like owning a problem from the cable to the DNS record.</p>
+          <ul class="social">
+            <li><a href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a></li>
+            <li><a href="https://github.com/Jose-A-Sanchez">GitHub</a></li>
+            <li><a href="mailto:hello@jasanchez.net">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="tag">[ Projects ]</p>
+          <h2>Things I've built and still run</h2>
+          <p class="sub">Each one is live or in daily use. Click through for the problem, the build, and what I'd change.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project">
+            <div class="thumb thumb-lab" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Homelab infrastructure</h3>
+              <p>A segmented home network and virtualization host running video surveillance, DNS filtering and a service dashboard.</p>
+              <ul class="stack"><li>Proxmox</li><li>UniFi</li><li>VLANs</li><li>Docker</li><li>LXC</li></ul>
+              <a class="more" href="projects/homelab.html">Read the case study</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="thumb thumb-zactex" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>ZAC-TEX Construction & Roofing</h3>
+              <p>Full web presence for a Texas roofing company: bilingual site, domain, DNS security, and business email.</p>
+              <ul class="stack"><li>HTML/CSS/JS</li><li>Cloudflare</li><li>DNSSEC</li><li>Exchange Online</li></ul>
+              <a class="more" href="projects/zactex.html">Read the case study</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="thumb thumb-truck" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Sanchez Truck Services</h3>
+              <p>Online scheduling for a semi-truck greasing business, with customer accounts and an owner panel for managing bookings.</p>
+              <ul class="stack"><li>Firebase Auth</li><li>Firestore</li><li>GitHub Pages</li></ul>
+              <a class="more" href="projects/truck-services.html">Read the case study</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="thumb thumb-surge" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Surge</h3>
+              <p>A self-hosted morning alarm app that builds a daily audio playlist from chant, text-to-speech, and daily readings.</p>
+              <ul class="stack"><li>Python</li><li>Flask</li><li>launchd</li><li>REST APIs</li></ul>
+              <a class="more" href="projects/surge.html">Read the case study</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="tag">[ Skills ]</p>
+          <h2>What I work with day to day</h2>
+        </div>
+        <div class="skills">
+          <div class="skill">
+            <h3>Networking</h3>
+            <p>UniFi gateways, switches and access points. VLAN segmentation, DNS, DHCP, and troubleshooting connectivity for client sites.</p>
+          </div>
+          <div class="skill">
+            <h3>Virtualization & containers</h3>
+            <p>Proxmox VE, LXC containers, Docker, and hardware passthrough for media and video workloads.</p>
+          </div>
+          <div class="skill">
+            <h3>Microsoft 365</h3>
+            <p>Exchange Online mailboxes, user onboarding and offboarding, licensing, and day-to-day admin for small businesses.</p>
+          </div>
+          <div class="skill">
+            <h3>Cloud & web</h3>
+            <p>Cloudflare DNS, WAF and Workers, Firebase, GitHub Pages, and plain HTML/CSS/JavaScript.</p>
+          </div>
+          <div class="skill">
+            <h3>Scripting</h3>
+            <p>Python and Flask for small services and automation, managed with Git and VS Code.</p>
+          </div>
+          <div class="skill">
+            <h3>End-user support</h3>
+            <p>Help desk tickets across 23 businesses, hardware repair, and explaining fixes in plain language.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDENTIALS -->
+    <section class="section" id="credentials">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="tag">[ Credentials ]</p>
+          <h2>Education and certifications</h2>
+        </div>
+        <div class="creds">
+          <div class="cred">
+            <h3>Associate of Applied Science</h3>
+            <dl>
+              <div><dt>School</dt><dd>Kansas City Kansas Community College</dd></div>
+              <div><dt>Year</dt><dd>2025</dd></div>
+            </dl>
+          </div>
+          <div class="cred">
+            <h3>CompTIA A+</h3>
+            <dl>
+              <div><dt>Issuer</dt><dd>CompTIA</dd></div>
+              <div><dt>Status</dt><dd class="pending">In progress</dd></div>
+            </dl>
+          </div>
+          <div class="cred">
+            <h3>IT Technician II</h3>
+            <dl>
+              <div><dt>Company</dt><dd>Revive IT</dd></div>
+              <div><dt>Since</dt><dd>2024</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap two-col">
+        <div>
+          <p class="tag">[ FAQ ]</p>
+          <h2>Quick answers for recruiters</h2>
+          <p class="sub">Don't see your question? Send me a note below.</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>What kind of role are you looking for?</summary>
+            <p>Systems or network administration, or a senior support role with a path into infrastructure. I want to spend more of my week on servers and networks than on password resets.</p>
+          </details>
+          <details>
+            <summary>Where are you located? Are you open to remote work?</summary>
+            <p>I'm in northeastern Kansas, about an hour from Kansas City. I'm open to on-site work in the KC area, hybrid, or remote.</p>
+          </details>
+          <details>
+            <summary>What's your MSP experience like?</summary>
+            <p>I support 23 small and mid-size businesses on a five-person team, so I handle everything from desktop support to network changes and Microsoft 365 administration.</p>
+          </details>
+          <details>
+            <summary>When could you start?</summary>
+            <p>Typically two weeks after an offer, so I can hand off my current clients properly.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="wrap two-col">
+        <div>
+          <p class="tag">[ Contact ]</p>
+          <h2>Let's talk about your team.</h2>
+          <p class="sub">I usually reply within a day. You can also reach me at <a href="mailto:hello@jasanchez.net">hello@jasanchez.net</a>.</p>
+        </div>
+        <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <label>Name<input name="name" autocomplete="name" required></label>
+          <label>Email<input name="email" type="email" autocomplete="email" required></label>
+          <label>Company <span class="muted">(optional)</span><input name="company" autocomplete="organization"></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button class="btn" type="submit">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>Andy Sanchez, IT Technician in Kansas.</p>
+      <nav aria-label="Footer">
+        <a href="resume.pdf">Resume</a>
+        <a href="https://github.com/Jose-A-Sanchez">GitHub</a>
+        <a href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+      </nav>
+      <p class="muted">&copy; <span id="year">2026</span> Andy Sanchez</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
