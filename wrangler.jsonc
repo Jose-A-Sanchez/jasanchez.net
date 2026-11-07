@@ -1,0 +1,8 @@
+{
+  // Cloudflare Workers config: serves this repo as a static site
+  "name": "jasanchez-net",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./"
+  }
+}

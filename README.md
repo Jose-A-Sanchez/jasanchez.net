@@ -11,7 +11,7 @@ Personal portfolio site for Andy Sanchez, IT Technician. Plain HTML, CSS and Jav
 
 ## Deploy
 
-Hosted on Cloudflare Pages, deployed automatically from the `main` branch. No build command; output directory is the repo root.
+Hosted on Cloudflare Workers (static assets), deployed automatically from the `main` branch. `wrangler.jsonc` serves the repo root; `.assetsignore` keeps repo-only files from being published.
 
 ## To do
 
