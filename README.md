@@ -7,7 +7,8 @@ Personal portfolio site for Andy Sanchez, IT Technician. Plain HTML, CSS and Jav
 - `index.html` – home page (about, projects, skills, credentials, FAQ, contact)
 - `projects/` – one case study page per project
 - `styles.css` – all styles; the accent color is `--sky` at the top
-- `script.js` – mobile menu, homelab panel animation, contact form
+- `photos/` – images, including screenshots of the live project sites
+- `script.js` – mobile menu, active nav link, contact form
 
 ## Deploy
 

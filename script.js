@@ -7,22 +7,37 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 // Mobile menu
 const toggle = document.querySelector('.nav-toggle');
 const links = document.getElementById('nav-links');
-toggle.addEventListener('click', () => {
-  const open = links.classList.toggle('open');
+const setMenu = (open) => {
+  links.classList.toggle('open', open);
   toggle.setAttribute('aria-expanded', open);
   toggle.textContent = open ? 'Close' : 'Menu';
-});
+  document.body.style.overflow = open ? 'hidden' : '';
+};
+toggle.addEventListener('click', () => setMenu(!links.classList.contains('open')));
 links.addEventListener('click', (e) => {
-  if (e.target.tagName === 'A' && links.classList.contains('open')) toggle.click();
+  if (e.target.closest('a') && links.classList.contains('open')) setMenu(false);
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && links.classList.contains('open')) { setMenu(false); toggle.focus(); }
 });
 
-// Homelab panel: services come online one at a time on load
-const items = document.querySelectorAll('.services li');
-const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-items.forEach((li, i) => {
-  if (reduce) { li.classList.add('online'); return; }
-  setTimeout(() => li.classList.add('online'), 400 + i * 220);
-});
+// Nav: the section on screen shows as the active link
+const navLinks = [...document.querySelectorAll('.nav-center a[href^="#"]')];
+if (navLinks.length && 'IntersectionObserver' in window) {
+  const byId = new Map(navLinks.map((a) => [a.getAttribute('href').slice(1), a]));
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const link = byId.get(entry.target.id);
+      if (entry.isIntersecting) {
+        navLinks.forEach((a) => a.removeAttribute('aria-current'));
+        link.setAttribute('aria-current', 'true');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  byId.forEach((_, id) => { const s = document.getElementById(id); if (s) spy.observe(s); });
+}
 
 // Contact form: send via Formspree without leaving the page
 const form = document.querySelector('.form');

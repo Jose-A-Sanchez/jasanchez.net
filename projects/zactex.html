@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>ZAC-TEX Construction & Roofing | Andy Sanchez</title>
   <meta name="description" content="A bilingual website, domain, DNS security and business email built for a Texas construction and roofing company.">
   <meta property="og:title" content="ZAC-TEX Construction & Roofing | Andy Sanchez">
   <meta property="og:description" content="A bilingual website, domain, DNS security and business email built for a Texas construction and roofing company.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://jasanchez.net/projects/zactex.html">
+  <meta property="og:image" content="https://jasanchez.net/photos/share.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%236CABDD%22%2F%3E%3Cpath%20d%3D%22M8%208h16v16H8z%22%20fill%3D%22%23000%22%2F%3E%3C%2Fsvg%3E">
   <link rel="canonical" href="https://jasanchez.net/projects/zactex.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,600;112,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -26,12 +30,17 @@
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
       <nav id="nav-links" class="nav-links" aria-label="Main">
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#projects">Projects</a>
-        <a href="../index.html#skills">Skills</a>
-        <a href="../index.html#credentials">Credentials</a>
-        <a href="../index.html#faq">FAQ</a>
-        <a class="btn btn-small" href="../index.html#contact">Let's talk</a>
+        <div class="nav-center">
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#projects" aria-current="page">Projects</a>
+          <a href="../index.html#skills">Skills</a>
+          <a href="../index.html#credentials">Credentials</a>
+          <a href="../index.html#faq">FAQ</a>
+        </div>
+        <div class="nav-right">
+          <a class="nav-site" href="https://github.com/Jose-A-Sanchez" aria-label="jasanchez.net on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>jasanchez.net</span></a>
+          <a class="btn btn-small" href="../index.html#contact">Let's talk</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -42,7 +51,13 @@
         <a class="back" href="../index.html#projects">Back to all projects</a>
         <p class="tag">[ Case study ]</p>
         <h1>ZAC-TEX Construction & Roofing</h1>
-        <p class="lede">A complete web presence for a family-owned construction and roofing company in Texas: website, domain, DNS security, and business email.</p>
+        <div class="case-hero__row">
+          <p class="lede">A complete web presence for a family-owned construction and roofing company in Texas: website, domain, DNS security, and business email.</p>
+          <div class="case-hero__visual"><div class="browser">
+  <div class="browser__bar">zactexllc.com</div>
+  <div class="browser__view"><img src="../photos/zactex-site.webp" alt="Home page of the ZAC-TEX Construction &amp; Roofing website" width="1440" height="900" loading="lazy" decoding="async"></div>
+</div></div>
+        </div>
         <dl class="facts">
           <div><dt>Role</dt><dd>Sole builder and admin</dd></div>
           <div><dt>Client</dt><dd>ZAC-TEX Construction & Roofing LLC</dd></div>
@@ -52,7 +67,7 @@
       </div>
     </section>
 
-    <section class="case">
+    <section class="case ruled">
       <div class="wrap case-body">
         <h2>The problem</h2>
         <div class="content">
@@ -61,9 +76,9 @@
       </div>
     </section>
 
-    <section class="case">
+    <section class="case ruled">
       <div class="wrap case-body">
-        <h2>What I built</h2>
+        <div><h2>What I built</h2><img class="case-shot" src="../photos/zactex-phone.webp" alt="The ZAC-TEX website on a phone" width="480" height="900" loading="lazy" decoding="async"></div>
         <div class="content">
           <ul>
             <li><strong>A bilingual website</strong> with an English/Spanish toggle, a full-screen photo hero, and pages for services, service areas, and contact</li>
@@ -76,7 +91,7 @@
       </div>
     </section>
 
-    <section class="case">
+    <section class="case ruled">
       <div class="wrap case-body">
         <h2>Why plain HTML</h2>
         <div class="content">
@@ -85,7 +100,7 @@
       </div>
     </section>
 
-    <section class="case">
+    <section class="case ruled">
       <div class="wrap case-body">
         <h2>What's next</h2>
         <div class="content">
@@ -95,14 +110,14 @@
       </div>
     </section>
 
-    <section class="next-project">
+    <section class="next-project ruled">
       <div class="wrap">
         <a href="truck-services.html"><span>Next project</span><strong>Sanchez Truck Services</strong></a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer ruled">
     <div class="wrap footer-inner">
       <p>Andy Sanchez, IT Technician in Kansas.</p>
       <nav aria-label="Footer">

@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Surge | Andy Sanchez</title>
   <meta name="description" content="A self-hosted Flask app that builds a morning alarm playlist from chant, text-to-speech, and the day's readings.">
   <meta property="og:title" content="Surge | Andy Sanchez">
   <meta property="og:description" content="A self-hosted Flask app that builds a morning alarm playlist from chant, text-to-speech, and the day's readings.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://jasanchez.net/projects/surge.html">
+  <meta property="og:image" content="https://jasanchez.net/photos/share.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%236CABDD%22%2F%3E%3Cpath%20d%3D%22M8%208h16v16H8z%22%20fill%3D%22%23000%22%2F%3E%3C%2Fsvg%3E">
   <link rel="canonical" href="https://jasanchez.net/projects/surge.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,600;112,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -26,12 +30,17 @@
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
       <nav id="nav-links" class="nav-links" aria-label="Main">
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#projects">Projects</a>
-        <a href="../index.html#skills">Skills</a>
-        <a href="../index.html#credentials">Credentials</a>
-        <a href="../index.html#faq">FAQ</a>
-        <a class="btn btn-small" href="../index.html#contact">Let's talk</a>
+        <div class="nav-center">
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#projects" aria-current="page">Projects</a>
+          <a href="../index.html#skills">Skills</a>
+          <a href="../index.html#credentials">Credentials</a>
+          <a href="../index.html#faq">FAQ</a>
+        </div>
+        <div class="nav-right">
+          <a class="nav-site" href="https://github.com/Jose-A-Sanchez" aria-label="jasanchez.net on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>jasanchez.net</span></a>
+          <a class="btn btn-small" href="../index.html#contact">Let's talk</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -42,7 +51,15 @@
         <a class="back" href="../index.html#projects">Back to all projects</a>
         <p class="tag">[ Case study ]</p>
         <h1>Surge</h1>
-        <p class="lede">A self-hosted morning alarm app that builds a new audio playlist every day from Gregorian chant, a spoken quote, and the day's Mass readings.</p>
+        <div class="case-hero__row">
+          <p class="lede">A self-hosted morning alarm app that builds a new audio playlist every day from Gregorian chant, a spoken quote, and the day's Mass readings.</p>
+          <div class="case-hero__visual"><div class="playlist" role="group" aria-label="The morning playlist, in order">
+  <div class="track"><p class="track__name">Chant <span>Gregorian</span></p><svg viewBox="0 0 448 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 1h3v22h-3zM5 7.5h3v9h-3zM10 4h3v16h-3zM15 1h3v22h-3zM20 8h3v8h-3zM25 2.5h3v19h-3zM30 3.5h3v17h-3zM35 5h3v14h-3zM40 9.5h3v5h-3zM45 9h3v6h-3zM50 2.5h3v19h-3zM55 8.5h3v7h-3zM60 8h3v8h-3zM65 1.5h3v21h-3zM70 5h3v14h-3zM75 5.5h3v13h-3zM80 1.5h3v21h-3zM85 7h3v10h-3zM90 4.5h3v15h-3zM95 8.5h3v7h-3zM100 1h3v22h-3zM105 7.5h3v9h-3zM110 8h3v8h-3zM115 8h3v8h-3zM120 1h3v22h-3zM125 1.5h3v21h-3zM130 8.5h3v7h-3zM135 4h3v16h-3zM140 3.5h3v17h-3zM145 1.5h3v21h-3zM150 3h3v18h-3zM155 2.5h3v19h-3zM160 5.5h3v13h-3zM165 4h3v16h-3zM170 5.5h3v13h-3zM175 6.5h3v11h-3zM180 7h3v10h-3zM185 8h3v8h-3zM190 1h3v22h-3zM195 4h3v16h-3zM200 5h3v14h-3zM205 3.5h3v17h-3zM210 7.5h3v9h-3zM215 4.5h3v15h-3zM220 6.5h3v11h-3zM225 3h3v18h-3zM230 1.5h3v21h-3zM235 5.5h3v13h-3zM240 4.5h3v15h-3zM245 3h3v18h-3zM250 1h3v22h-3zM255 5.5h3v13h-3zM260 3.5h3v17h-3zM265 1h3v22h-3zM270 1h3v22h-3zM275 5h3v14h-3zM280 9h3v6h-3zM285 6h3v12h-3zM290 2.5h3v19h-3zM295 1h3v22h-3zM300 7h3v10h-3zM305 5h3v14h-3zM310 7.5h3v9h-3zM315 3h3v18h-3zM320 2h3v20h-3zM325 6.5h3v11h-3zM330 6h3v12h-3zM335 9.5h3v5h-3zM340 8.5h3v7h-3zM345 7h3v10h-3zM350 8h3v8h-3zM355 9h3v6h-3zM360 8.5h3v7h-3zM365 3h3v18h-3zM370 1.5h3v21h-3zM375 8h3v8h-3zM380 5h3v14h-3zM385 9.5h3v5h-3zM390 4h3v16h-3zM395 7h3v10h-3zM400 3.5h3v17h-3zM405 3h3v18h-3zM410 5h3v14h-3zM415 4.5h3v15h-3zM420 7.5h3v9h-3zM425 3h3v18h-3zM430 3h3v18h-3zM435 5h3v14h-3zM440 1h3v22h-3zM445 8h3v8h-3z"/></svg></div>
+  <div class="track"><p class="track__name">Quote read aloud <span>ElevenLabs</span></p><svg viewBox="0 0 448 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 4h3v16h-3zM5 2.5h3v19h-3zM10 5.5h3v13h-3zM15 9.5h3v5h-3zM20 5.5h3v13h-3zM25 1h3v22h-3zM30 4h3v16h-3zM35 6h3v12h-3zM40 1.5h3v21h-3zM45 8.5h3v7h-3zM50 4.5h3v15h-3zM55 8.5h3v7h-3zM60 4h3v16h-3zM65 7.5h3v9h-3zM70 5.5h3v13h-3zM75 6h3v12h-3zM80 8.5h3v7h-3zM85 1h3v22h-3zM90 9.5h3v5h-3zM95 3h3v18h-3zM100 3.5h3v17h-3zM105 5.5h3v13h-3zM110 2.5h3v19h-3zM115 1.5h3v21h-3zM120 9h3v6h-3zM125 5h3v14h-3zM130 9h3v6h-3zM135 8h3v8h-3zM140 3h3v18h-3zM145 9h3v6h-3zM150 2h3v20h-3zM155 4h3v16h-3zM160 4.5h3v15h-3zM165 7.5h3v9h-3zM170 6.5h3v11h-3zM175 8.5h3v7h-3zM180 5h3v14h-3zM185 6.5h3v11h-3zM190 7h3v10h-3zM195 6h3v12h-3zM200 9.5h3v5h-3zM205 6.5h3v11h-3zM210 6h3v12h-3zM215 9h3v6h-3zM220 7h3v10h-3zM225 9.5h3v5h-3zM230 2.5h3v19h-3zM235 5h3v14h-3zM240 6.5h3v11h-3zM245 9h3v6h-3zM250 2.5h3v19h-3zM255 5h3v14h-3zM260 8h3v8h-3zM265 5.5h3v13h-3zM270 6.5h3v11h-3zM275 3h3v18h-3zM280 3h3v18h-3zM285 8.5h3v7h-3zM290 7.5h3v9h-3zM295 4.5h3v15h-3zM300 6.5h3v11h-3zM305 2h3v20h-3zM310 1.5h3v21h-3zM315 2h3v20h-3zM320 5h3v14h-3zM325 3.5h3v17h-3zM330 8h3v8h-3zM335 1.5h3v21h-3zM340 5h3v14h-3zM345 1.5h3v21h-3zM350 5h3v14h-3zM355 5h3v14h-3zM360 4h3v16h-3zM365 2.5h3v19h-3zM370 5h3v14h-3zM375 4.5h3v15h-3zM380 7.5h3v9h-3zM385 1h3v22h-3zM390 5.5h3v13h-3zM395 8.5h3v7h-3zM400 8.5h3v7h-3zM405 6.5h3v11h-3zM410 5h3v14h-3zM415 2.5h3v19h-3zM420 9.5h3v5h-3zM425 4h3v16h-3zM430 7h3v10h-3zM435 6.5h3v11h-3zM440 7h3v10h-3zM445 4.5h3v15h-3z"/></svg></div>
+  <div class="track"><p class="track__name">More chant</p><svg viewBox="0 0 448 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 3h3v18h-3zM5 8h3v8h-3zM10 2.5h3v19h-3zM15 7.5h3v9h-3zM20 8h3v8h-3zM25 9.5h3v5h-3zM30 7h3v10h-3zM35 9h3v6h-3zM40 4.5h3v15h-3zM45 8h3v8h-3zM50 7.5h3v9h-3zM55 1.5h3v21h-3zM60 3.5h3v17h-3zM65 6h3v12h-3zM70 5.5h3v13h-3zM75 4.5h3v15h-3zM80 9h3v6h-3zM85 6h3v12h-3zM90 8.5h3v7h-3zM95 5.5h3v13h-3zM100 9.5h3v5h-3zM105 3.5h3v17h-3zM110 6.5h3v11h-3zM115 3h3v18h-3zM120 5h3v14h-3zM125 2.5h3v19h-3zM130 3.5h3v17h-3zM135 3.5h3v17h-3zM140 4h3v16h-3zM145 9.5h3v5h-3zM150 4.5h3v15h-3zM155 4.5h3v15h-3zM160 7h3v10h-3zM165 9.5h3v5h-3zM170 1h3v22h-3zM175 2h3v20h-3zM180 2.5h3v19h-3zM185 4.5h3v15h-3zM190 5h3v14h-3zM195 5.5h3v13h-3zM200 4.5h3v15h-3zM205 8.5h3v7h-3zM210 4h3v16h-3zM215 5h3v14h-3zM220 7h3v10h-3zM225 5h3v14h-3zM230 2h3v20h-3zM235 1h3v22h-3zM240 2.5h3v19h-3zM245 2h3v20h-3zM250 6h3v12h-3zM255 3.5h3v17h-3zM260 5.5h3v13h-3zM265 9.5h3v5h-3zM270 2h3v20h-3zM275 5.5h3v13h-3zM280 3.5h3v17h-3zM285 4h3v16h-3zM290 2h3v20h-3zM295 4h3v16h-3zM300 9h3v6h-3zM305 1.5h3v21h-3zM310 5.5h3v13h-3zM315 2h3v20h-3zM320 1h3v22h-3zM325 9h3v6h-3zM330 9.5h3v5h-3zM335 2h3v20h-3zM340 6h3v12h-3zM345 7h3v10h-3zM350 7.5h3v9h-3zM355 4h3v16h-3zM360 2h3v20h-3zM365 4.5h3v15h-3zM370 2.5h3v19h-3zM375 7h3v10h-3zM380 6h3v12h-3zM385 1h3v22h-3zM390 3h3v18h-3zM395 9h3v6h-3zM400 8h3v8h-3zM405 3.5h3v17h-3zM410 5h3v14h-3zM415 6.5h3v11h-3zM420 2h3v20h-3zM425 9.5h3v5h-3zM430 6.5h3v11h-3zM435 9.5h3v5h-3zM440 5h3v14h-3zM445 4.5h3v15h-3z"/></svg></div>
+  <div class="track"><p class="track__name">Daily readings <span>USCCB RSS</span></p><svg viewBox="0 0 448 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 4h3v16h-3zM5 3.5h3v17h-3zM10 3h3v18h-3zM15 4.5h3v15h-3zM20 1h3v22h-3zM25 2.5h3v19h-3zM30 4h3v16h-3zM35 3h3v18h-3zM40 7.5h3v9h-3zM45 8h3v8h-3zM50 8h3v8h-3zM55 4.5h3v15h-3zM60 2.5h3v19h-3zM65 8h3v8h-3zM70 6h3v12h-3zM75 1.5h3v21h-3zM80 5.5h3v13h-3zM85 1h3v22h-3zM90 4h3v16h-3zM95 3.5h3v17h-3zM100 7.5h3v9h-3zM105 3h3v18h-3zM110 8h3v8h-3zM115 1h3v22h-3zM120 7.5h3v9h-3zM125 9.5h3v5h-3zM130 9.5h3v5h-3zM135 4.5h3v15h-3zM140 7h3v10h-3zM145 6h3v12h-3zM150 1.5h3v21h-3zM155 2h3v20h-3zM160 6.5h3v11h-3zM165 7.5h3v9h-3zM170 4.5h3v15h-3zM175 2.5h3v19h-3zM180 1.5h3v21h-3zM185 4.5h3v15h-3zM190 7h3v10h-3zM195 9h3v6h-3zM200 3h3v18h-3zM205 6.5h3v11h-3zM210 3.5h3v17h-3zM215 6.5h3v11h-3zM220 4h3v16h-3zM225 1h3v22h-3zM230 8h3v8h-3zM235 4h3v16h-3zM240 9h3v6h-3zM245 3.5h3v17h-3zM250 9.5h3v5h-3zM255 9.5h3v5h-3zM260 1h3v22h-3zM265 8h3v8h-3zM270 9.5h3v5h-3zM275 4.5h3v15h-3zM280 7h3v10h-3zM285 7.5h3v9h-3zM290 7h3v10h-3zM295 5h3v14h-3zM300 6h3v12h-3zM305 6.5h3v11h-3zM310 6.5h3v11h-3zM315 5h3v14h-3zM320 5h3v14h-3zM325 8h3v8h-3zM330 1h3v22h-3zM335 2h3v20h-3zM340 4.5h3v15h-3zM345 2.5h3v19h-3zM350 9.5h3v5h-3zM355 8.5h3v7h-3zM360 6.5h3v11h-3zM365 1.5h3v21h-3zM370 9.5h3v5h-3zM375 9h3v6h-3zM380 7h3v10h-3zM385 1.5h3v21h-3zM390 3.5h3v17h-3zM395 6.5h3v11h-3zM400 6.5h3v11h-3zM405 8h3v8h-3zM410 5h3v14h-3zM415 9h3v6h-3zM420 8.5h3v7h-3zM425 9.5h3v5h-3zM430 5h3v14h-3zM435 4h3v16h-3zM440 7h3v10h-3zM445 3.5h3v17h-3z"/></svg></div>
+</div></div>
+        </div>
         <dl class="facts">
           <div><dt>Role</dt><dd>Solo project</dd></div>
           <div><dt>Runs on</dt><dd>Mac Mini M1, at home</dd></div>
@@ -52,7 +69,7 @@
       </div>
     </section>
 
-    <section class="case">
+    <section class="case ruled">
       <div class="wrap case-body">
         <h2>The idea</h2>
         <div class="content">
@@ -61,7 +78,7 @@
       </div>
     </section>
 
-    <section class="case">
+    <section class="case ruled">
       <div class="wrap case-body">
         <h2>How it works</h2>
         <div class="content">
@@ -76,7 +93,7 @@
       </div>
     </section>
 
-    <section class="case">
+    <section class="case ruled">
       <div class="wrap case-body">
         <h2>What it shows</h2>
         <div class="content">
@@ -86,14 +103,14 @@
       </div>
     </section>
 
-    <section class="next-project">
+    <section class="next-project ruled">
       <div class="wrap">
         <a href="homelab.html"><span>Next project</span><strong>Homelab infrastructure</strong></a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer ruled">
     <div class="wrap footer-inner">
       <p>Andy Sanchez, IT Technician in Kansas.</p>
       <nav aria-label="Footer">
